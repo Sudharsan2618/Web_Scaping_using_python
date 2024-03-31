@@ -1,43 +1,41 @@
-# LinkedIn Profile Data Extractor
-This Python script allows you to extract data from LinkedIn profiles provided through a text file containing URLs. It utilizes Selenium WebDriver with Chrome to automate the process of extracting information from LinkedIn profiles. The extracted data is then saved into an Excel file for further analysis.
+# Web Scraping Tool for Extracting URLs from Search Engines
+
+# Overview
+
+This tool is designed to extract URLs related to specific domains from search engine results pages (SERPs). It utilizes Selenium WebDriver to automate web browsing and extract URLs from Google and Bing search engines.
+
+# Features
+
+Google Search: Extracts URLs from Google search results for a specified domain.
+Bing Search: Extracts URLs from Bing search results for a specified domain.
+CSV Output: Saves the extracted URLs to CSV files for further analysis.
 
 # Prerequisites
-Before running the script, ensure you have the following installed:
+Python 3.x
+Chrome WebDriver (chromedriver.exe)
+Chrome Browser
 
-* Python 3.x
-* Chrome WebDriver
-* Required Python libraries:
-* bs4 (BeautifulSoup)
-* selenium
-* openpyxl
-You can install the necessary libraries using pip:
+# Installation
+Install Python from python.org.
+Download Chrome WebDriver from chromedriver.chromium.org.
 
-
-pip install beautifulsoup4
+# Install required Python packages using pip:
 pip install selenium
-pip install openpyxl
 
-# Usage
-Place the Chrome WebDriver executable (chromedriver.exe) in the specified path or update chrome_driver_path variable with the correct path to your Chrome WebDriver.
-Run the script. It will prompt you to interact with the browser for login if required.
-Select a text file containing LinkedIn profile URLs.
-The script will extract data from each profile URL provided in the text file and save it to an Excel file.
-The Excel file will be saved with a filename based on the current timestamp.
+# Clone or download the source code from the repository.
 
-# File Structure
-linkedin_profile_data_extractor.py: Python script containing the main code.
-README.md: This file providing instructions and information about the script.
-requirements.txt: List of required Python libraries.
+Update the chrome_driver_path variable in the code with the path to your Chrome WebDriver.
+Prepare a CSV file containing the list of domain names you want to search for.
+Run the script extract_urls_from_search_engines.py.
 
-# Sample Text File
-The text file containing LinkedIn profile URLs should have one URL per line, like the following:
+# Follow the instructions provided by the script:
 
-https://www.linkedin.com/in/example1
-https://www.linkedin.com/in/example2
-https://www.linkedin.com/in/example3
+Browse for the CSV file containing domain names.
+Wait for the browser to open and load search engine pages.
+Press Enter after each page has loaded.
+The script will extract URLs and save them to CSV files.
 
+# Notes
 
-# Note
-Ensure to comply with LinkedIn's terms of service and respect user privacy when using this script.
-The script may require adjustments depending on changes to LinkedIn's website structure.
-
+Adjust the max_page_number variable in the code to control the maximum number of pages to navigate through in search results.
+Customize the script to suit your specific requirements or extend its functionality as needed.
